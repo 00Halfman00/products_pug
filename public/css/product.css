@@ -1,0 +1,47 @@
+.grid {
+  padding: 0;
+  margin: 0;
+  max-width: fit-content;
+}
+.card-container {
+  margin:1rem;
+  padding:1rem;
+  border-radius: .35rem;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.26);
+  background-color: whitesmoke;
+}
+
+.card-controls, .product-grid {
+  margin: .5rem;
+  padding: .2rem;
+}
+
+.card-image, img {
+  max-width: 100%;
+  border-radius: .35rem;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.26);
+}
+
+.card-title {
+  color: goldenrod;
+}
+
+.product-grid {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.product-btn {
+  background-color: white;
+  color: purple;
+  border: none;
+  padding: .75rem;
+  border-radius: .3rem;
+  border-radius: .35rem;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.26);
+}
+
+.product-btn:hover {
+  background-color: goldenrod;
+  color:black;
+}

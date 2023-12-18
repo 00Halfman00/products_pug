@@ -1,0 +1,53 @@
+extends ./layouts/main-layout.pug
+
+block styles
+  link(rel="stylesheet", href="/css/product.css")
+
+block content
+  each product in products
+    .grid
+      article.card-container
+        h1.card-title #{product.title}
+        .card-controls
+          img(src="https://img.freepik.com/free-vector/business-team-discussing-ideas-startup_74855-4380.jpg?size=626&ext=jpg", alt="a project")
+        .card-controls
+          p.product-price $19.99
+          p.product-description Interesting stuff about #{product.title}
+        .card-controls
+          button.product-btn ADD TO CART
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//- doctype html
+//- html(lang="en")
+//-   head
+//-     meta(charset="UTF-8")
+//-     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-     link(rel="stylesheet", href="/css/main.css")
+//-     title #{pageTitle}
+//-   body
+//-     header.main-header
+//-       nav.main-header__nav
+//-         ul.main-header__items-list
+//-           li.main-header__item
+//-             a(href="/") Products
+//-           li.main-header__item
+//-             a(href="/admin/add-product") Add Product
+//-     main.main__container
+//-       h1 #{pageTitle}

@@ -1,0 +1,54 @@
+.main-main {
+  margin: 1rem;
+}
+
+.product-form {
+  margin:0;
+  padding:0;
+}
+
+.product-form__controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-form__title-input {
+  width: 20rem;
+  border: none;
+  border-radius: .25rem;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.26);
+  padding: .5rem;
+  margin-top: .4rem;
+  outline: none;
+}
+
+.product-form__title-btn {
+  background-color: white;
+  width: 6rem;
+  color: purple;
+  padding: .5rem;
+  border:none;
+  border-radius: .25rem;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.26);
+  margin-top: .8rem;
+}
+
+.product-form__title-btn:hover {
+  background-color: goldenrod;
+  color:black;
+}
+
+
+.form-grid {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: .35rem;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.26);
+  background-color: whitesmoke;
+  max-width: fit-content;
+}
+
+
+.product-form__title-input:hover{
+  background-color: lightblue;
+}

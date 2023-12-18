@@ -1,0 +1,39 @@
+extends ./layouts/main-layout.pug
+
+block styles
+  link(rel="stylesheet", href="/css/productForm.css")
+
+block content
+  .form-grid
+    form.product-form(action="/admin/add-product", method="POST")
+      .product-form__controls
+        label.product-form__title-label Title
+        input.product-form__title-input(name="product")
+      .product-form__controls
+        button.product-form__title-btn(type="submit") submit
+
+
+//- doctype html
+//- html(lang="en")
+//-   head
+//-     meta(charset="UTF-8")
+//-     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-     link(rel="stylesheet", href="/css/main.css")
+//-     link(rel="stylesheet", href="/css/productForm.css")
+//-     title #{pageTitle}
+//-   body
+//-     header.main-header
+//-       nav.main-header__nav
+//-         ul.main-header__items-list
+//-           li.main-header__item
+//-             a(href="/") Products
+//-           li.main-header__item
+//-             a(href="/admin/add-product") Add Product
+//-     main.main__container
+//-       h1 #{pageTitle}
+//-       form.product-form(action="/admin/add-product", method="POST")
+//-         .product-form__controls
+//-           label.product-form__title-label Title
+//-           input.product-form__title-input(name="product")
+//-         .product-form__controls
+//-           button.product-form__title-btn(type="submit") submit
